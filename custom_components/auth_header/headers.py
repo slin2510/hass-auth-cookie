@@ -42,7 +42,7 @@ class HeaderAuthProvider(AuthProvider):
         assert context is not None
         header_name = self.config[CONF_USERNAME_HEADER]
         request = cast(Request, context.get("request"))
-        if header_name not in request.headers:
+        if header_name not in request.cookies:
             _LOGGER.info("No header set, returning empty flow")
             return HeaderLoginFlow(
                 self,
