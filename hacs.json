@@ -1,5 +1,5 @@
 {
-    "name": "Header Authentication",
+    "name": "Cookie Authentication",
     "render_readme": true,
     "homeassistant": "2021.5"
 }
